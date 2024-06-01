@@ -59,8 +59,8 @@ const App = () => {
   return (
     <div id="main">
       {/* Do not remove the main div */}
-      <input type="text" data-testid="input1" placeholder="Enter first name" value={name1} onChange={e=>setName1(e.target.value)} />
-      <input type="text" data-testid="input2" placeholder="Enter second name" value={name2} onChange={e=>setName2(e.target.value)} />
+      <input type="text" name="name1" data-testid="input1" placeholder="Enter first name" value={name1} onChange={e=>setName1(e.target.value)} />
+      <input type="text" name="name2" data-testid="input2" placeholder="Enter second name" value={name2} onChange={e=>setName2(e.target.value)} />
       <button data-testid="calculate_relationship" onClick={calculate}>Calculate Relationship Future</button>
       <button data-testid="clear" onClick={clear}>Clear</button>
       <h3 data-testid="answer">{relation}</h3>
